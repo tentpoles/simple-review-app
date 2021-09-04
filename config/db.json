@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "name": "Alm. Akidi Tio",
+      "date": "14/8/2021 8:6:10",
+      "rating": 3,
+      "comment": "Kepakkan sayap kebhinekaan!",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/241074112.jpg?k=ee8e4f193185aa46fae27fb27e718a63083386e4857044dad15818b1dfc8b8e9&o=&hp=1",
+      "id": 1
+    },
+    {
+      "name": "Sasdasdasdd",
+      "date": "14/8/2021 8:13:8",
+      "rating": 5,
+      "comment": "asdadasdadsad",
+      "image": "none",
+      "id": 2
+    }
+  ]
+}
