@@ -20,6 +20,10 @@ Let's configure json-server (Fake API)
 ```html
   json-server -p 4000 db.json
 ```
+Change the urlData value with your local json-server
+```html
+  urlData: 'https://localhost:4000/data/'
+```
 Run the project, then listen to port on your browser
 ```html
   npm run serve
