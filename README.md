@@ -1,4 +1,4 @@
-### Simple Review Web App (VueJS & Fake JSON Server) 
+### Simple Review Web App (Vue & Fake JSON Server) 
 # :exclamation::exclamation::exclamation: This is README for Project Setup
 What you need:
 - node package manager
