@@ -2,10 +2,11 @@
 # :exclamation::exclamation::exclamation: This is README for Project Setup
 What you need:
 - node package manager
-- axios: ^0.21.1
-- core-js: ^3.6.5
-- vue: ^3.0.0,
-- vue-router": ^4.0.0-0
+- json-server
+- "axios: ^0.21.1"
+- "core-js: ^3.6.5"
+- "vue: ^3.0.0"
+- "vue-router": ^4.0.0-0"
 
 Get started the dependencies package
 ```html
