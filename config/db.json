@@ -2,18 +2,31 @@
   "data": [
     {
       "name": "Alm. Akidi Tio",
+<<<<<<< HEAD
       "date": "14/8/2021 8:6:10",
       "rating": 3,
+=======
+      "date": "10/8/2021 18:48:43",
+      "rating": 5,
+>>>>>>> df3bf22 (Initial commit)
       "comment": "Kepakkan sayap kebhinekaan!",
       "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/241074112.jpg?k=ee8e4f193185aa46fae27fb27e718a63083386e4857044dad15818b1dfc8b8e9&o=&hp=1",
       "id": 1
     },
     {
+<<<<<<< HEAD
       "name": "Sasdasdasdd",
       "date": "14/8/2021 8:13:8",
       "rating": 5,
       "comment": "asdadasdadsad",
       "image": "none",
+=======
+      "name": "Sigit Poernomo",
+      "date": "10/8/2021 18:57:41",
+      "rating": 4,
+      "comment": "PPKM level 4 harus memakai masker dengan benar dan konsisten saat melaksanakan kegiatan di luar rumah serta tidak diizinkan penggunaan face shield tanpa menggunakan masker.",
+      "image": "https://wallpaperaccess.com/full/1871775.jpg",
+>>>>>>> df3bf22 (Initial commit)
       "id": 2
     }
   ]

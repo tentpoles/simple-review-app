@@ -81,26 +81,46 @@
                     rating: null,
                     comment: '',
                     image: '',
+<<<<<<< HEAD
                 }
+=======
+                },
+                urlData: 'https://my-json-server.typicode.com/tentpoles/fake-json-server/data',
+>>>>>>> df3bf22 (Initial commit)
             }
         },
         methods: {
             load() {
+<<<<<<< HEAD
                 axios.get('https://my-json-server.typicode.com/tentpoles/fake-json-server/data')
                 .then((res) => {
                     this.reviews = res.data
                 })
                 .catch((err) => {
                     console.log(err.response)
+=======
+                axios.get(`${this.urlData}`)
+                .then((res) => {
+                    this.reviews = res.data;
+                })
+                .catch((err) => {
+                    console.log(err.response);
+>>>>>>> df3bf22 (Initial commit)
                 })
             },
             store: function(event) {
                 const currentTime = new Date();
                 const thisTime = `${currentTime.getDate()}/${currentTime.getMonth()+1}/${currentTime.getFullYear()} ${currentTime.getHours()}:${currentTime.getMinutes()}:${currentTime.getSeconds()}`;
                 const tmpPath = document.getElementById('file-upload').value
+<<<<<<< HEAD
                 tmpPath !== '' ? this.form_review.image = tmpPath.substring(12) : this.form_review.image = 'none'
                 this.form_review.date = thisTime
                 let ratingStars
+=======
+                tmpPath !== '' ? this.form_review.image = tmpPath.substring(12) : this.form_review.image = 'none';
+                this.form_review.date = thisTime;
+                let ratingStars;
+>>>>>>> df3bf22 (Initial commit)
                 if (document.getElementById('rate-5').checked) {
                     ratingStars = document.getElementById('rate-5').value;
                 }
@@ -116,20 +136,33 @@
                 else if (document.getElementById('rate-1').checked) {
                     ratingStars = document.getElementById('rate-1').value;
                 }
+<<<<<<< HEAD
                 this.form_review.rating = parseInt(ratingStars)
                 axios.post('https://my-json-server.typicode.com/tentpoles/fake-json-server/data', this.form_review)
                 .then((res) => {
                     this.load()
                     alert('Data berhasil ditambah!')
+=======
+                this.form_review.rating = parseInt(ratingStars);
+                axios.post(`${this.urlData}`, this.form_review)
+                .then((res) => {
+                    this.load();
+                    alert('Data berhasil ditambah!');
+>>>>>>> df3bf22 (Initial commit)
                     this.form_review.name = this.form_review.comment = "";
                     event.target.reset();
                 })
                 .catch((err) => {
+<<<<<<< HEAD
                     console.log(err.response)
+=======
+                    console.log(err.response);
+>>>>>>> df3bf22 (Initial commit)
                 })
             },
             destroy: function(id) {
                 if(confirm('Apakah Anda yakin akan menghapus data ini?')){
+<<<<<<< HEAD
                     axios.delete(`https://my-json-server.typicode.com/tentpoles/fake-json-server/data/${id}`)
                     .then(() => {
                         this.load()
@@ -137,12 +170,25 @@
                     })
                     .catch((err) => {
                         console.log(err.response)
+=======
+                    axios.delete(`${this.urlData}/${id}`)
+                    .then(() => {
+                        this.load();
+                        alert('Data berhasil dihapus!');
+                    })
+                    .catch((err) => {
+                        console.log(err.response);
+>>>>>>> df3bf22 (Initial commit)
                     });
                 }
             }
         },
         mounted() {
+<<<<<<< HEAD
             this.load()
+=======
+            this.load();
+>>>>>>> df3bf22 (Initial commit)
         }
     }
 </script>
