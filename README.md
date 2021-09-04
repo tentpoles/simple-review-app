@@ -21,7 +21,7 @@ Let's configure json-server (Fake API)
 ```
 Run the project, then listen to port on your browser
 ```html
-  npm run dev
+  npm run serve
 ```
 #
-Interface Demo Link: https://codepen.io/b-alkautsar/full/bGWQgJw
+Demo Link: https://simple-review-app.vercel.app/
