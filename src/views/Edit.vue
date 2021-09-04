@@ -87,13 +87,8 @@
     </section>
 </template>
 <script>
-<<<<<<< HEAD
-    import { useRouter, useRoute } from 'vue-router'
-    import axios from 'axios'
-=======
     import { useRouter, useRoute } from 'vue-router';
     import axios from 'axios';
->>>>>>> df3bf22 (Initial commit)
 
     export default {  
         data() {
@@ -104,52 +99,30 @@
                     rating: null,
                     comment: '',
                     image: '',
-<<<<<<< HEAD
-                }
-=======
                 },
                 urlData: 'https://my-json-server.typicode.com/tentpoles/fake-json-server/data/',
->>>>>>> df3bf22 (Initial commit)
             }
         },
         methods: {
             load() {
                 const route = useRoute();
-<<<<<<< HEAD
-                axios.get(`https://my-json-server.typicode.com/tentpoles/fake-json-server/data/${route.params.id}`)
-                .then((res) => {
-                    this.review = res.data
-                })
-                .catch((err) => {
-                    console.log(err.response)
-=======
                 axios.get(`${this.urlData}/${route.params.id}`)
                 .then((res) => {
                     this.review = res.data;
                 })
                 .catch((err) => {
                     console.log(err.response);
->>>>>>> df3bf22 (Initial commit)
                 })
             },
             update: function() {
                 const currentTime = new Date();
                 const thisTime = `${currentTime.getDate()}/${currentTime.getMonth()+1}/${currentTime.getFullYear()} ${currentTime.getHours()}:${currentTime.getMinutes()}:${currentTime.getSeconds()}`;
-<<<<<<< HEAD
-                const tmpPath = document.getElementById('file-upload').value
-                if(tmpPath !== ''){
-                    this.review.image = tmpPath.substring(12);
-                }
-                this.review.date = thisTime
-                let ratingStars
-=======
                 const tmpPath = document.getElementById('file-upload').value;
                 if(tmpPath !== ''){
                     this.review.image = tmpPath.substring(12);
                 }
                 this.review.date = thisTime;
                 let ratingStars;
->>>>>>> df3bf22 (Initial commit)
                 if (document.getElementById('rate-5').checked) {
                     ratingStars = document.getElementById('rate-5').value;
                 }
@@ -165,15 +138,6 @@
                 else if (document.getElementById('rate-1').checked) {
                     ratingStars = document.getElementById('rate-1').value;
                 }
-<<<<<<< HEAD
-                this.review.rating = parseInt(ratingStars)
-                axios.put(`https://my-json-server.typicode.com/tentpoles/fake-json-server/data/${this.review.id}`, this.review)
-                .then(() => {
-                    alert('Data berhasil diubah!')
-                })
-                .catch((err) => {
-                    console.log(err.response)
-=======
                 this.review.rating = parseInt(ratingStars);
                 axios.put(`${this.urlData}/${this.review.id}`, this.review)
                 .then(() => {
@@ -181,16 +145,11 @@
                 })
                 .catch((err) => {
                     console.log(err.response);
->>>>>>> df3bf22 (Initial commit)
                 });
             }
         },
         mounted() {
-<<<<<<< HEAD
-            this.load()
-=======
             this.load();
->>>>>>> df3bf22 (Initial commit)
         }
     }
 </script>
